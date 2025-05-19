@@ -20,19 +20,57 @@
         .fade-fog {
           animation: fogFade 2.5s ease-in-out;
         }
+        
+        @keyframes glowPulse {
+          0%, 100% {
+            box-shadow: 0 0 0px rgba(34,197,94, 0.4);
+          }
+          50% {
+            box-shadow: 0 0 40px rgba(34,197,94, 0.6);
+          }
+        }
+        
+        .glow-effect {
+          animation: glowPulse 6s ease-in-out infinite;
+        }
+    </style>
+        <style>
+            html {
+              scroll-behavior: smooth;
+            }
+      /* Класс для указания, что блок кликабелен */
+      .clickable {
+        cursor: pointer;
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      /* Эффект при наведении */
+      .clickable:hover {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
         </style>
+        <style>
+            .clickable {
+              font-weight: bold;
+              font-style: italic;
+              text-decoration: underline;
+              color: #000;
+            }
+          </style>
+
 </head>
 <body>
-    <section class="relative h-screen bg-fixed bg-center bg-cover" style="background-image: url('https://drive.google.com/file/d/1uXYU4HZ6szqiUUd-d0icLldITKaPwpYn/view?usp=sharing');">
+    <section class="relative h-screen bg-fixed bg-center bg-cover" style="background-image: url('https://arturtukaev1.github.io/storytelling/1block.png');">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div class="max-w-2xl text-center px-6 text-white">
             <h2 class="text-4xl font-bold mb-6">The Breaking Point</h2>
             <p class="text-lg leading-relaxed">
-              I couldn’t believe how quickly my life unraveled. One evening, after another grueling day at work,
-              a sharp, burning pain shot through my lower back so fiercely I couldn’t stand upright. My shoulders
-              were knotted with tension, and even the gentlest touch felt like fire. I knew I needed relief—fast—
-              because my body and mind were crumbling under the weight of chronic pain and relentless stress.
-            </p>
+                I couldn’t believe how quickly my life unraveled. One evening, after another <span class="clickable font-bold italic underline text-white">grueling day at work</span>,
+                a <span class="clickable font-bold italic underline text-white">sharp, burning pain</span> shot through my lower back so fiercely I couldn’t stand upright.
+                My shoulders were <span class="clickable font-bold italic underline text-white">knotted with tension</span>, and even the gentlest touch felt like fire.
+                I knew I needed <span class="clickable font-bold italic underline text-white">relief—fast</span>—because my body and mind were crumbling under the weight of
+                <span class="clickable font-bold italic underline text-white">chronic pain</span> and <span class="clickable font-bold italic underline text-white">relentless stress</span>.
+              </p>
           </div>
         </div>
       </section>
@@ -42,52 +80,88 @@
       <div class="lg:w-1/2">
         <h2 class="text-3xl font-bold text-gray-800 mb-6">Frustration and Failed Fixes</h2>
         <p class="text-lg text-gray-700 leading-relaxed">
-          I tried everything — from prescription pills that left me groggy to hot packs that scorched my skin,
-          even meditation apps that tested my patience. Nothing lasted. Every quick fix stole hours of productivity,
-          nights of sleep, and moments with the people I love. I was stuck in an exhausting cycle of discomfort
-          and frustration, desperate for something real — until I discovered a THC/CBD blend crafted for true relief.
-        </p>
+            I tried everything — from <span class="clickable">prescription pills</span> that left me groggy to <span class="clickable">hot packs</span>
+            that scorched my skin, even <span class="clickable">meditation apps</span> that tested my patience. <span class="clickable">Nothing lasted</span>.
+            Every <span class="clickable">quick fix</span> stole hours of productivity, nights of sleep, and moments with the people I love.
+            I was stuck in an <span class="clickable">exhausting cycle</span> of discomfort and frustration, desperate for something real — until
+            I discovered a <span class="clickable">THC/CBD blend</span> crafted for <span class="clickable">true relief</span>.
+          </p>
       </div>
-      <div class="lg:w-1/2 h-96 bg-gray-200 rounded-xl shadow-inner">
-        <img src="https://drive.google.com/file/d/1b-SA9JEomM2f5W-BXNk2qwWcnehUPn8o/view?usp=sharing" alt="">
+      <div class="lg:w-1/2">
+        <img src="https://arturtukaev1.github.io/storytelling/2block.png" alt="Placeholder image" class="clickable w-full h-96 object-cover rounded-xl shadow-inner">
       </div>
+    </div>
     </div>
   </section>
   <!-- Block 3: A Ray of Hope -->
 <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
-        <div class="lg:w-1/2 h-96 bg-gray-200 rounded-xl shadow-inner">
-            <!-- Placeholder for image -->
+        <div>
+            <img src="https://arturtukaev1.github.io/storytelling/3block.png" alt="Placeholder image" class="clickable w-full h-96 object-cover rounded-xl shadow-inner">
           </div>
       <div class="lg:w-1/2">
         <h2 class="text-3xl font-bold text-gray-800 mb-6">A Ray of Hope</h2>
         <p class="text-lg text-gray-700 leading-relaxed fade-fog">
-          A friend placed an APE vape cart in my hand and smiled: “Different high for different time.” I was skeptical,
-          but the clean design—and the promise of a perfectly tuned THC/CBD balance—won me over. One cautious draw,
-          and within minutes a soothing warmth un-knotted my shoulders; the relentless ache in my lower back melted away.
-          For the first time in years I felt real relief—freedom from pain and the stress that had been living rent-free in my head.
-        </p>
+            A friend placed an <span class="clickable">APE vape cart</span> in my hand and smiled: “<span class="clickable">Different high for different time</span>.”
+            I was skeptical, but the <span class="clickable">clean design</span>—and the promise of a <span class="clickable">perfectly tuned THC/CBD balance</span>—won me over.
+            One cautious draw, and within minutes a <span class="clickable">soothing warmth</span> un-knotted my shoulders; the <span class="clickable">relentless ache</span> in my lower back
+            melted away. For the first time in years I felt <span class="clickable">real relief</span>—freedom from pain and the stress that had been
+            living rent-free in my head.
+          </p>
       </div>
     </div>
   </section>
   <!-- Block 4: Rediscovering Life—One Session at a Time -->
 <section class="py-20 bg-white">
     <div class="container mx-auto px-6 max-w-4xl flex flex-col items-center text-center">
-      <div class="w-full h-96 bg-gray-200 rounded-xl shadow-inner mb-8">
-        <!-- Placeholder for image -->
-      </div>
+        <div>
+            <img src="https://arturtukaev1.github.io/storytelling/4block.png" alt="Placeholder image" class="clickable w-full max-w-full h-96 object-cover rounded-xl shadow-inner">
+          </div>
       <h2 class="text-3xl font-bold text-gray-800 mb-6">Rediscovering Life—One Session at a Time</h2>
       <p class="text-lg text-gray-700 leading-relaxed">
         Within a week I fine-tuned each draw to the moment:<br>
-        • A creative lift for afternoon brainstorms.<br>
-        • A calming unwind after evening workouts.<br>
-        • A deep reset for restorative sleep.<br><br>
-        Lab-tested and heavy-metal free, APE’s premium carts have set the quality standard since 2018—and they’re now my daily ritual.
-        By day 5 my workout recovery jumped, soreness vanished, and I woke up with clear focus and real energy.
-        Ready to find your perfect balance?
+        • <span class="clickable">A creative lift</span> for afternoon brainstorms.<br>
+        • <span class="clickable">A calming unwind</span> after evening workouts.<br>
+        • <span class="clickable">A deep reset</span> for restorative sleep.<br><br>
+        <span class="clickable">Lab-tested</span> and <span class="clickable">heavy-metal free</span>, APE’s <span class="clickable">premium carts</span> have set the quality standard since 2018—and they’re now my <span class="clickable">daily ritual</span>.
+        By day 5 my <span class="clickable">workout recovery jumped</span>, <span class="clickable">soreness vanished</span>, and I woke up with <span class="clickable">clear focus</span> and <span class="clickable">real energy</span>.
+        Ready to find your <span class="clickable">perfect balance</span>?
       </p>
     </div>
   </section>
-  
+  <!-- Block 5: Feel the Shift—Get Your APE Now -->
+    <section class="py-20 bg-gray-100">
+    <div class="container mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
+        <div class="lg:w-1/2 w-full bg-gray-200 rounded-xl shadow-inner glow-effect overflow-hidden flex items-center justify-center" id="sell">
+            <img src="https://arturtukaev1.github.io/storytelling/5block.png" alt="" class="w-full h-full object-cover">
+          </div>
+      <div class="lg:w-1/2 text-gray-800">
+        <h2 class="text-3xl font-bold mb-4">Feel the Shift—Get Your APE Now</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          Imagine every muscle loose, every thought clear.<br>
+          <strong>APE carts aren’t just relief— they’re a lifestyle upgrade trusted by 12 000+ creatives, athletes, and busy parents.</strong>
+        </p>
+        <ul class="list-disc list-inside text-lg mb-6">
+          <li><strong>Choose your vibe:</strong> Creative Lift · Calming Unwind · Deep Reset.</li>
+          <li><strong>Checkout in 60 seconds</strong>—secure and discreet.</li>
+          <li><strong>Take your first draw.</strong> Feel the shift or get your money back.</li>
+        </ul>
+        <p class="text-lg mb-4">Ready for a life where pain never sets the agenda?</p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#" class="px-6 py-3 bg-black text-white font-semibold rounded-xl hover:bg-gray-800">Get My Blend</a>
+          <a href="#" class="px-6 py-3 bg-white border border-gray-400 text-gray-800 font-semibold rounded-xl hover:bg-gray-200">Need Help Choosing?</a>
+        </div>
+        <p class="text-sm italic mt-6">“Different high for different time—since 2018.”</p>
+      </div>
+    </div>
+  </section>
+  <script>
+    // Назначаем обработчик клика для каждого кликабельного блока
+    document.querySelectorAll('.clickable').forEach(block => {
+      block.addEventListener('click', () => {
+        document.getElementById('sell').scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
 </body>
 </html>
